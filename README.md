@@ -1,65 +1,67 @@
 OpenMW
 ======
 
-OpenMW is an open-source open-world RPG game engine that supports playing Morrowind by Bethesda Softworks. You need to own the game for OpenMW to play Morrowind.
+OpenMW — движок RPG с открытым миром и открытым исходным кодом, позволяющий играть в Morrowind от Bethesda Softworks. Чтобы играть через OpenMW, у вас должна быть собственная копия игры.
 
-OpenMW also comes with OpenMW-CS, a replacement for Bethesda's Construction Set.
+В комплект также входит OpenMW-CS — замена редактора Construction Set от Bethesda.
 
-* Version: 0.52.0
-* License: GPLv3 (see [LICENSE](https://gitlab.com/OpenMW/openmw/-/raw/master/LICENSE) for more information)
-* Website: https://www.openmw.org
-* IRC: [#openmw on irc.libera.chat](https://web.libera.chat/#openmw)
-* Discord: [official server](https://discord.com/servers/openmw-260439894298460160)
+> **Android.** Если вы ищете сборку для телефона или планшета — она находится в отдельном проекте [des1roer/OpenMW-Android](https://github.com/des1roer/OpenMW-Android). В его релизе уже есть собранный APK со встроенной игрой: после установки игру не нужно отдельно копировать на устройство. Этот репозиторий (`des1roer/openmw`) — исходники самого движка для Windows, macOS и Linux; готовых релизов с игрой здесь нет.
+
+* Версия: 0.52.0
+* Лицензия: GPLv3 (подробности в [LICENSE](https://gitlab.com/OpenMW/openmw/-/raw/master/LICENSE))
+* Сайт: https://www.openmw.org
+* IRC: [#openmw на irc.libera.chat](https://web.libera.chat/#openmw)
+* Discord: [официальный сервер](https://discord.com/servers/openmw-260439894298460160)
 * Matrix #openmw-space:openmw.org
-* _Note_: IRC, Discord, and Matrix are bridged to each other.
+* _Примечание_: IRC, Discord и Matrix связаны мостами друг с другом.
 
-Font Licenses:
-* DejaVuLGCSansMono.ttf: custom (see [files/data/fonts/DejaVuFontLicense.txt](https://gitlab.com/OpenMW/openmw/-/raw/master/files/data/fonts/DejaVuFontLicense.txt) for more information)
-* DemonicLetters.ttf: SIL Open Font License (see [files/data/fonts/DemonicLettersFontLicense.txt](https://gitlab.com/OpenMW/openmw/-/raw/master/files/data/fonts/DemonicLettersFontLicense.txt) for more information)
-* MysticCards.ttf: SIL Open Font License (see [files/data/fonts/MysticCardsFontLicense.txt](https://gitlab.com/OpenMW/openmw/-/raw/master/files/data/fonts/MysticCardsFontLicense.txt) for more information)
+Лицензии шрифтов:
+* DejaVuLGCSansMono.ttf: собственная лицензия (подробности в [files/data/fonts/DejaVuFontLicense.txt](https://gitlab.com/OpenMW/openmw/-/raw/master/files/data/fonts/DejaVuFontLicense.txt))
+* DemonicLetters.ttf: SIL Open Font License (подробности в [files/data/fonts/DemonicLettersFontLicense.txt](https://gitlab.com/OpenMW/openmw/-/raw/master/files/data/fonts/DemonicLettersFontLicense.txt))
+* MysticCards.ttf: SIL Open Font License (подробности в [files/data/fonts/MysticCardsFontLicense.txt](https://gitlab.com/OpenMW/openmw/-/raw/master/files/data/fonts/MysticCardsFontLicense.txt))
 
-Current Status
+Текущее состояние
 --------------
 
-The main quests in Morrowind, Tribunal and Bloodmoon are all completable. Some issues with side quests are to be expected (but rare). Check the [bug tracker](https://gitlab.com/OpenMW/openmw/-/issues/?milestone_title=openmw-1.0) for a list of issues we need to resolve before the "1.0" release. Even before the "1.0" release, however, OpenMW boasts some new [features](https://wiki.openmw.org/index.php?title=Features), such as improved graphics and user interfaces.
+Основные сюжетные линии Morrowind, Tribunal и Bloodmoon полностью проходимы. Возможны (но редки) проблемы с побочными квестами. Список задач, которые нужно решить перед релизом «1.0», смотрите в [баг-трекере](https://gitlab.com/OpenMW/openmw/-/issues/?milestone_title=openmw-1.0). Впрочем, и до релиза «1.0» OpenMW уже предлагает новые [возможности](https://wiki.openmw.org/index.php?title=Features), такие как улучшенная графика и интерфейс.
 
-Pre-existing modifications created for the original Morrowind engine can be hit-and-miss. The OpenMW script compiler performs more thorough error-checking than Morrowind does, meaning that a mod created for Morrowind may not necessarily run in OpenMW. Some mods also rely on quirky behaviour or engine bugs in order to work. We are considering such compatibility issues on a case-by-case basis - in some cases adding a workaround to OpenMW may be feasible, in other cases fixing the mod will be the only option. If you know of any mods that work or don't work, feel free to add them to the [Mod status](https://wiki.openmw.org/index.php?title=Mod_status) wiki page.
+Работа существующих модов, созданных для оригинального движка Morrowind, не гарантирована. Компилятор скриптов OpenMW проверяет ошибки строже, чем оригинальный движок, поэтому мод, написанный для Morrowind, не обязательно заработает в OpenMW. Некоторые моды также полагаются на особенности поведения или ошибки оригинального движка. Такие случаи рассматриваются индивидуально: где-то можно добавить обходное решение в OpenMW, где-то — только исправить сам мод. Если вы знаете моды, которые работают или не работают, дополните страницу [Mod status](https://wiki.openmw.org/index.php?title=Mod_status) на вики.
 
-Platform Support
+Поддержка платформ
 ------------------
 
-The officially supported platforms at this time are:
+Официально поддерживаемые платформы на данный момент:
 
-- Windows 10 or later
-- macOS 14.8 or later
+- Windows 10 и новее
+- macOS 14.8 и новее
 - Linux
 
-We do not support 32-bit platforms.
+32-битные платформы не поддерживаются.
 
-We welcome efforts to add more supported platforms!
+Мы приветствуем усилия по добавлению поддержки других платформ!
 
-Getting Started
+С чего начать
 ---------------
 
-* [Installation instructions](https://openmw.readthedocs.io/en/latest/manuals/installation/index.html)
-* [Build from source](https://wiki.openmw.org/index.php?title=Development_Environment_Setup)
-* [Report a bug](https://gitlab.com/OpenMW/openmw/issues) - read the [guidelines](https://wiki.openmw.org/index.php?title=Bug_Reporting_Guidelines) before submitting your first bug!
-* [Known issues](https://gitlab.com/OpenMW/openmw/issues?label_name%5B%5D=Bug)
+* [Инструкции по установке](https://openmw.readthedocs.io/en/latest/manuals/installation/index.html)
+* [Сборка из исходного кода](https://wiki.openmw.org/index.php?title=Development_Environment_Setup)
+* [Сообщить об ошибке](https://gitlab.com/OpenMW/openmw/issues) — перед первым багрепортом прочитайте [рекомендации](https://wiki.openmw.org/index.php?title=Bug_Reporting_Guidelines)!
+* [Известные проблемы](https://gitlab.com/OpenMW/openmw/issues?label_name%5B%5D=Bug)
 
-Contributing
+Как помочь проекту
 ---------
 
-Not sure what to do with all your free time? OpenMW is always looking for new contributions. [See here for how to contribute.](./CONTRIBUTING.md)
+Не знаете, куда девать свободное время? OpenMW всегда рад новым участникам. [Инструкция по участию в проекте.](./CONTRIBUTING.md)
 
-The data path
+Путь к данным
 -------------
 
-The data path tells OpenMW where to find your Morrowind files. If you run the launcher, OpenMW should be able to pick up the location of these files on its own, if both Morrowind and OpenMW are installed properly (installing Morrowind under WINE is considered a proper install).
+Путь к данным сообщает OpenMW, где искать файлы Morrowind. Если запустить лаунчер, OpenMW должен сам найти эти файлы — при условии, что и Morrowind, и OpenMW установлены корректно (установка Morrowind через WINE считается корректной).
 
-Command line options
+Параметры командной строки
 --------------------
 
-    Syntax: openmw <options>
+    Синтаксис: openmw <параметры>
     Allowed options:
       --config arg                          additional config directories
       --replace arg                         settings where the values from the
