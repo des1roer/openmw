@@ -1,5 +1,7 @@
 # OpenMW для Android с встроенным Morrowind
 
+Основной и актуальный файл — https://github.com/des1roer/OpenMW-Android/blob/main/memory.md. Там сборка с нуля одной командой (`source/tools/build-embedded-apk.sh`), ключ и все грабли. Нативная часть лежит в пре-релизе `native-payload-0.51.0-14` того же репозитория.
+
 ## Итог
 
 - APK: `C:\dev\openmw\buid\openmw-morrowind-0.51.0-14-embedded-release.apk` (961 МБ, release, не debuggable, `targetSdk 35`, arm64-v8a, пакет `com.ast.openmw`).
